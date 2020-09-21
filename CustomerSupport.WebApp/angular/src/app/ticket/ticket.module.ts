@@ -1,10 +1,8 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from "@angular/core";
-import { CreateTicketComponent } from './create-ticket/create-ticket.component';
+import { CreateOrEditTicketComponent } from './create-ticket/create-edit-ticket.component';
 import { ListTicketComponent } from './list-ticket/list-ticket.component';
 import { TicketRoutingModule } from './ticket.routing.module';
-import { UpdateTicketComponent } from './update-ticket/update-ticket.component';
-import { ViewTicketComponent } from './view-ticket/view-ticket.component';
 import {TableModule} from 'primeng/table';
 import {CalendarModule} from 'primeng/calendar';
 import {SliderModule} from 'primeng/slider';
@@ -44,10 +42,8 @@ import { ToastrModule } from 'ngx-toastr';
         ReactiveFormsModule
     ],
     declarations:[
-        UpdateTicketComponent,
-        ViewTicketComponent,
         ListTicketComponent,
-        CreateTicketComponent
+        CreateOrEditTicketComponent
     ]
 })
 export class TicketModule { }

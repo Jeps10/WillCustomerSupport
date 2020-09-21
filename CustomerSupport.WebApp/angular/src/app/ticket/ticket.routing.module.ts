@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from "@angular/router";
-import { CreateTicketComponent } from './create-ticket/create-ticket.component';
+import { CreateOrEditTicketComponent } from './create-ticket/create-edit-ticket.component';
 import { ListTicketComponent } from './list-ticket/list-ticket.component';
 
 const routes: Routes = [
@@ -13,11 +13,11 @@ const routes: Routes = [
         },
         {
           path: 'create', // child route path
-          component: CreateTicketComponent, // child route component that the router renders
+          component: CreateOrEditTicketComponent, // child route component that the router renders
         },
         {
           path: ':id',
-          component: CreateTicketComponent, // another child route component that the router renders
+          component: CreateOrEditTicketComponent, // another child route component that the router renders
         }
       ]
     },

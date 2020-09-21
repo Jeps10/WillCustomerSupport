@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { tick } from '@angular/core/testing';
 import { FormControl, FormGroup } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
@@ -10,11 +9,11 @@ import { ProjectService } from 'src/app/services/project.service';
 import { TicketService } from 'src/app/services/ticket.service';
 
 @Component({
-  selector: 'app-create-ticket',
-  templateUrl: './create-ticket.component.html',
-  styleUrls: ['./create-ticket.component.scss']
+  selector: 'app-create-edit-ticket',
+  templateUrl: './create-edit-ticket.component.html',
+  styleUrls: ['./create-edit-ticket.component.scss']
 })
-export class CreateTicketComponent implements OnInit {
+export class CreateOrEditTicketComponent implements OnInit {
 
   id: number = -1;
   isEditing: boolean = false;
